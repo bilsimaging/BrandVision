@@ -24,15 +24,6 @@ Unlock the sonic potential of your visual brand identity with BrandVision. Our i
 2. Connect on a Deeper Level: Go beyond visuals and forge emotional connections with your audience through sound.
 3. Craft Consistent Experiences: Ensure all your audio touchpoints, from advertising to in-store music, seamlessly align with your brand's core identity.
 
-## Installation
-
-To set up BrandBeat-AudioSynthesis on your local machine, follow these steps:
-1. Clone the repository:
-git clone [repository-url]
-2. Install the necessary dependencies:
-npm install
-3. Run the application:
-npm start
 
 ## Stay Updated:
 BrandVision is under development, but we're excited to share its potential with you. Stay tuned for updates on availability and access options.
