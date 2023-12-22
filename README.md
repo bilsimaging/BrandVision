@@ -10,7 +10,7 @@ Unlock the sonic potential of your visual brand identity with BrandVision. Our i
 - **Textual Descriptions**: Discover your brand's sonic personality through detailed reports, including descriptors like rhythm, tone, and instrumentation.
 - **Immersive Audio Experiences (coming soon)**: Dive even deeper with optional speech or music interpretations that bring your brand voice to life.
 - **User-Friendly Interface**: Easy-to-use interface for uploading logos and receiving audio outputs.
-![Cover Hackathon]([Image](https://github.com/bilsimaging/BrandVision/blob/main/Cover%20Project.png?raw=true))
+ 
 ## Get Started
 
 1. Upload your logo: Simply drag and drop or click to select your brand's visual representation.
