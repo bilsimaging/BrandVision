@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+
+
+h2 { 
+    font-size: 20px;
+    padding: 10px;
+}
+
+header {
+    background: #201e1a;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    margin: 20px;
+}
+
+#upload-section, #response-section {
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#drop-area {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column;  
+    border: 08px dashed #fdc74a;
+    border-radius: 5px;
+    padding: 80px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#imagePreview {
+    display: block; 
+    max-width: 25%; 
+    height: auto;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+    #imagePreview {
+        max-width: 100%;  
+        height: auto;
+        margin: 5px 0;    
+    }
+}
+
+
+#drop-area:hover {
+    border-color: #aaa;
+    color: #fdc74a;
+}
+
+#drop-label {
+    cursor: pointer;
+}
+
+#drop-label img {
+    height: 50px; 
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+#generateButton {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 40px;
+    background: #201e1a;
+    color: white;
+    /*border: none;*/
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#generateButton:hover {
+    background: #fdc74a;
+    color: #201e1a;
+}
+
+#textOutput {
+    background: #eef;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #ddd;
+    margin-bottom: 20px;
+    animation: pulseAnimation 3s infinite;
+}
+
+@keyframes pulseAnimation {
+    0% { box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+    50% { box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); }
+    100% { box-shadow: 0 0 5px rgba(253, 199, 74, 0.9); }
+}
+
+
+audio#speechAudioPlayer {
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+a#downloadMusicLink {
+    display: block;
+    text-align: center;
+    background: #201e1a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+a#downloadMusicLink:hover {
+    background: #fdc74a;
+    color: #201e1a;
+}

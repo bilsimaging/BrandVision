@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandVision: See and Hear Your Brand</title>
+    <meta name="description" content="Unlock the sonic potential of your visual brand identity with BrandVision. Our innovative AI technology analyzes your logo and translates its essence into captivating auditory experiences. Dive deeper into your brand, understand its unique sonic personality, and create unforgettable connections with your audience.">
+    <link rel="icon" href="faviconbilsimaging.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="faviconbilsimaging.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BrandVision: See and Hear Your Brand</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Discover Your Voice Logo: Analyzing and Interpreting Brand Identity</h2>
+            <div id="drop-area">
+                <input type="file" id="imageInput" accept="image/*" hidden>
+                <label for="imageInput" id="drop-label">
+                    <img src="uploadimage.png" alt="Drag and drop icon" />
+                    Drag and drop your logo here or click to select
+                </label>
+                <img id="imagePreview" src="" alt="Image preview" style="display: none;">
+            </div>
+            <button id="generateButton" onclick="scrollToAnalysis()">Generate Your Brand's Voice</button>
+            <div id="loadingMessage" style="display: none;">Processing and analyzing, please wait...</div>
+        </section>
+        <section id="response-section">
+            <h2>Visual Portrait Analysis AI Response</h2>
+            <div id="textOutput" style="margin-bottom: 20px;"></div>
+            <audio id="speechAudioPlayer" controls style="display: none;"></audio>
+            <button id="generateMusicButton" style="display: none;">Generate Music</button>
+            <div id="musicLoading" style="display: none;">Generating music, please wait...</div>
+            <a id="downloadMusicLink" href="" download style="display: none;">Download Your Brand Voice</a>
+            <a href="https://bilsimaging.com/" target="_blank" >
+                <p class="bilsimagingcopyright">
+                     MVP APP Development - © Bilsimaging</p>
+            </a>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
