@@ -43,8 +43,8 @@ Contributions to BrandVision-See and Hear Your Brand are welcome. Please ensure 
 ## Acknowledgments
 - gemini-pro-vision 
 - Google's Text-to-Speech for speech synthesis
--Music Generation Facebook's MusicGen (coming soon) will be integrated into this project; check it out [here]: (https://github.com/bilsimaging/Radio-Imaging-Audio-Generator)
--The Trulens-Eval open-source evaluation tool (coming soon) will be integrated smoothly into this project.
+- Music Generation Facebook's MusicGen (coming soon) will be integrated into this project; check it out [here]: (https://github.com/bilsimaging/Radio-Imaging-Audio-Generator)
+- The Trulens-Eval open-source evaluation tool (coming soon) will be integrated smoothly into this project.
 ### 💬 Contact
 Email: [contact@bilsimaging.com](mailto:contact@bilsimaging.com)  
 More Info: [Bilsimaging](https://bilsimaging.com)
