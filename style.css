@@ -37,7 +37,7 @@ main {
     justify-content: center; 
     align-items: center;     
     flex-direction: column;  
-    border: 08px dashed #fdc74a;
+    border: 8px dashed #fdc74a;
     border-radius: 5px;
     padding: 80px;
     text-align: center;
