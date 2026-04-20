@@ -1,6 +1,7 @@
 
 require('dotenv').config();
 const express = require('express');
+const rateLimit = require('express-rate-limit');
 const cors = require('cors');
 const multer = require('multer');
 const fs = require("fs");
@@ -34,7 +35,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('.'));
 app.use('/audio', express.static('Sound'));
 
-app.post('/process-image', upload.single('file'), async (req, res) => {
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+});
+app.use(limiter);
+
+const processImageLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 10,
+});
+
+app.post('/process-image', processImageLimiter, upload.single('file'), async (req, res) => {
   if (!req.file) {
       return res.status(400).json({ error: "No image uploaded." });
   }
@@ -87,7 +99,7 @@ app.post('/process-image', upload.single('file'), async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(port, () => {
